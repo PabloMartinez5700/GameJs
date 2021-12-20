@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OPERACIONES</title>
+  <link rel="icon" type="image/png" href="./img/operaciones.png"/>
+  <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/464f089ae7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+  <audio id="audioError">
+    <source src="./audios/wrong.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="audioAcierto">
+    <source src="./audios/correct.mp3" type="audio/mpeg">   
+  </audio>
+
+  <header>
+    <p id="fecha"></p>
+    <div class="container">
+      <div class="nav">
+        <h1><img src="./img/calculadora.png" width="4%" height="3%"> OPERACIONES BÁSICAS</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">SUMAR</a></li>
+            <li><a href="pageRestar.html">RESTAR</a></li>
+            <li><a href="pageMultiplic.html">MULTIPLICAR</a></li>
+            <li class="current"><a href="pageDividir.html">DIVIDIR</a></li>
+            <li><a href="historial.html">HISTORIAL</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  
+  <div class="wrapper">
+    <p> ¿SABES RESOLVER ESTA OPERACIÓN?</p>
+      <div class="equation">
+        <h1 id="num1" style="color:#FE4A49"></h1>
+        <h1 id="signo" style="color: #2AB7CA;"></h1>
+        <h1 id="num2" style="color: #FED766"></h1>
+        <h1 style="color: #F86624">=</h1>
+        <h1 style="color: gray">?</h1>
+      </div>
+  </div>
+
+  <div class="answer-options">
+    <div class="options" style="background-color: #FE4A49;">
+      <h1 id="option1">1</h1>
+    </div>
+    
+    <div class="options" style="background-color: #2AB7CA;">
+      <h1 id="option2">2</h1>
+    </div>
+    <div class="options" style="background-color: #FED766;">
+      <h1 id="option3">3</h1>
+    </div>
+  </div>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="./divide.js"></script>
+  <script src="./src/controller.js"></script>
+  <script src="./src/view.js"></script>
+  <script src="./src/index.js"></script>
+</body>
+</html>

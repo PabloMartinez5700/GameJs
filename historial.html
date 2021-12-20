@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OPERACIONES</title>
+  <link rel="icon" type="image/png" href="./img/operaciones.png"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  
+  <audio id="audioError">
+    <source src="./audios/wrong.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="audioAcierto">
+    <source src="./audios/correct.mp3" type="audio/mpeg">   
+  </audio>
+
+  <header>
+    <p id="fecha"></p>
+    <p id="tiempo"></p>
+    <div class="container">
+      <div class="nav">
+        <h1><img src="./img/calculadora.png" width="4%" height="3%"> OPERACIONES BÁSICAS</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">SUMAR</a></li>
+            <li><a href="pageRestar.html">RESTAR</a></li>
+            <li><a href="pageMultiplic.html">MULTIPLICAR</a></li>
+            <li class="current"><a href="historial.html">HISTORIAL</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  
+  <div class="equation1">
+    <p style="padding: 20px;"> HISTORIAL DE OPERACIONES</p>
+    <table class="table table-striped">
+      <thead class="dark">
+      <tbody id="tabla">
+      </tbody>
+  </table>
+  </div>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="./src/controller.js"></script>
+  <script src="./src/view.js"></script>
+  <script src="./src/index.js"></script>
+</body>
+</html>

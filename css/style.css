@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+#puntos{
+  font-size: 30px;
+  padding-top: 1%;
+  padding-left: 1%;
+}
+
+#fecha{
+  padding-top: 0.6%;
+  padding-left: 0.6%;
+  font-size: 23px;
+}
+
+body{
+  font-family: 'Luckiest Guy', cursive;
+  background-color: #d2d2d6;
+}
+
+header{
+  background: #FE4A49;
+}
+
+.container{
+  padding: 48px;
+  background: #FE4A49;
+  margin: auto;
+}
+
+.container h1{
+  float: left;
+  color: black;
+}
+
+.container ul{
+  list-style-type: none;
+  font-size: 20px;
+}
+
+.container li{
+  margin-top: 11px;
+  float: left;
+  padding: 0 20px 0 20px;
+}
+
+.container a{
+  color: white;
+  text-decoration: none;
+}
+
+.seleccionado a::after{
+  content: '_';
+  background-color: white;
+  font-size: 4px;
+  display: block;
+}
+
+.wrapper{
+  margin-top: 20px;
+  margin-left: 15px;
+  width: 90%;
+  padding: 4%;
+  background-color: white;
+  border-radius: 12px;
+}
+
+.wrapper p{
+  margin-bottom: 8%;
+  font-size: 35px;
+  color: black;
+  text-align: center;
+}
+
+.equation{
+  font-size: 65px;
+  background-color: white;
+  text-align: center;
+  margin-left: 5%;
+}
+
+.equation1{
+  font-size: 30px;
+  background-color: white;
+  text-align: center;
+}
+
+.equation h1{
+  display: inline;
+  padding: 20px;
+}
+
+.respuestas{
+  font-size: 130%;
+}
+
+.options{
+  float:right;
+  margin-top: 2%;
+  margin: 1%;
+  margin-right: 15%;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 6%;
+  width: 2%;
+  border-radius: 8px;
+  box-shadow: 4px 4px 5px 1px rgba(2, 2, 2, 0.8);
+}
